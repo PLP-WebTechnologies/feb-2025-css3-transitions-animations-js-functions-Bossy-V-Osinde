@@ -1,0 +1,109 @@
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    transition: background-color 0.5s, color 0.5s;
+  }
+  
+  .site-header, .site-footer {
+    background-color: #222;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .main-content {
+    padding: 2rem;
+  }
+  
+  .hero {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #333;
+    color: white;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #444;
+    transform: scale(1.05);
+  }
+  
+  .features ul {
+    list-style-type: "✔️ ";
+    padding-left: 1.5rem;
+  }
+  
+  .settings {
+    margin-top: 3rem;
+    border-top: 2px solid #ddd;
+    padding-top: 1rem;
+  }
+  
+  input[type="color"], select {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  /* Themes */
+  body.light {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  body.dark {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  /* Accent color variable applied */
+  :root {
+    --accent-color: #3333ff;
+  }
+  
+  button, select, input[type="color"] {
+    border: 2px solid var(--accent-color);
+  }
+  
+  /* Flash animation on button click */
+  @keyframes flash {
+    0% { background-color: yellow; }
+    50% { background-color: orange; }
+    100% { background-color: yellow; }
+  }
+  
+  .animate-button {
+    animation: flash 0.5s ease;
+  }
+  

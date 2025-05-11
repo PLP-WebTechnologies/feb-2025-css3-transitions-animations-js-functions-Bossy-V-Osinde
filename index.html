@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Theme Toggle App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+      <h1 class="logo">🌐 ThemeSwitch</h1>
+      <ul class="nav-links">
+        <li><a href="#home" tabindex="0">Home</a></li>
+        <li><a href="#features" tabindex="0">Features</a></li>
+        <li><a href="#settings" tabindex="0">Settings</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-content" id="home" role="main">
+    <section class="hero">
+      <h2>Welcome to Your Personalized Web App</h2>
+      <p>Toggle your preferred theme and we'll remember it next time!</p>
+      <button id="toggleBtn" aria-pressed="false">🌗 Toggle Theme</button>
+    </section>
+
+    <section id="features" class="features">
+      <h3>Key Features</h3>
+      <ul>
+        <li>✨ Smooth transitions</li>
+        <li>💾 Theme persistence with localStorage</li>
+        <li>⚙️ Interactive user-triggered animations</li>
+      </ul>
+    </section>
+
+    <section id="settings" class="settings" role="region" aria-label="Theme Settings">
+      <h3>Preferences</h3>
+      <form id="preferencesForm">
+        <label for="fontSize">Font Size:</label>
+        <select id="fontSize">
+          <option value="16px">Normal</option>
+          <option value="20px">Large</option>
+          <option value="24px">Extra Large</option>
+        </select>
+        <br /><br />
+        <label for="accentColor">Accent Color:</label>
+        <input type="color" id="accentColor" name="accentColor" value="#3333ff" />
+        <br /><br />
+        <button type="submit">Save Preferences</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <p>&copy; 2025 ThemeSwitch. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
